@@ -12,18 +12,16 @@ class FileComparator
 {
     private Timer $timer;
     private FileHandler $fileHandler;
-    private int $bufferSize;
     
     private ?string $file1 = null;
     private ?string $file2 = null;
     private ?string $outputFile1 = null;
     private ?string $outputFile2 = null;
     
-    public function __construct(int $bufferSize = 8192)
+    public function __construct()
     {
         $this->timer = new Timer();
         $this->fileHandler = new FileHandler();
-        $this->bufferSize = $bufferSize;
     }
     
     /**
