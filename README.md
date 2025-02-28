@@ -26,5 +26,5 @@ php index.php input1.txt input2.txt unique1.txt unique2.txt
 ### Generate Test Files
 
 ```bash
-php generate.php 1000  # Creates two files with 1000 lines each
+php generator.php 1000  # Creates two files with 1000 lines each
 ```
